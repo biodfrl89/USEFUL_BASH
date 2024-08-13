@@ -1,0 +1,2 @@
+# Add a 0 to the beginning off files. The number between  curly brackets must be changed accordingly
+for file in $(ls | egrep ^[0-9]{1}_a*); do mv $file $(echo $file | sed 's/^/0/'); done
